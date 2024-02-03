@@ -140,8 +140,7 @@ function NavigationBar() {
       style={{ background: "royalblue", borderBottom: "1px solid #666666" }}
     >
       <Toolbar>
-        <ThinkZoneLogo />
-        <div style={{ marginLeft: "auto" }}>
+        <div style={{ alignSelf: "flex-start" }}>
           <IconButton edge="start" color="inherit" onClick={handleMenuClick}>
             <MenuIcon />
           </IconButton>
@@ -199,6 +198,7 @@ function NavigationBar() {
             </Stack>
           </MenuItem>
         </Menu>
+        <ThinkZoneLogo />
       </Toolbar>
     </AppBar>
   );
